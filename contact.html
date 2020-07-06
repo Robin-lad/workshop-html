@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<form action="index.html" method="POST" class="form-example">
+		<form action="/send_contact" method="POST" class="form-example">
 			<table>
 				<tbody>
 					<tr>
@@ -22,7 +22,21 @@
 					</tr>
 					<tr>	
 						<td><label for="tel">Téléphone : </label> </td>
-						 <td><input type="text" name="tel" required> </td>
+						<td><input type="text" name="tel" required> </td>
+						
+					</tr>
+					<tr>
+						<td>
+							<select name="pref" id="pref-select">
+								<option value="">--Please choose an option--</option>
+								<option value="Email">Email</option>
+								<option value="Telephone">Telephone</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="message">Message : </td>
+						<td><textarea name="message" rows="5" cols="33"></textarea></td>
 					</tr>
 				</tbody>
 			</table>
